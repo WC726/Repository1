@@ -18,40 +18,60 @@
         <input type="email" id="email" name="email" value="">
         <p></p>
         <label for="days available">What days do you plan to come to the club?</label>
-        <input type="checkbox" id="days available" name="days available" value="">
+        <select type="radio" id="days available" name="days available">
+            <option value="Tuesday">Tuesdays</option>
+            <option value="Thursday">Thursays</option>
+            <option value="Both">Both</option>
+            <option value="Can't commit">I can't commit to anything</option>
+        </select>
         <p></p>
         <label for="Tues game role">If you plan to play on Tuesdays, what role would you like to play as?</label>
-        <input type="radio" id="Tues game role" name="Tuesday game role" value="">
+        <select type="radio" id="Tues game role" name="Tuesday game role">
+            <option value="Player">Player</option>
+            <option value="DM">Dungeon Master (DM)</option>
+            <option value="N/A">N/A</option>
+        </select>
         <p></p>
         <label for="Thurs game role">If you plan to play on Thursdays, what role do you plan to play as?</label>
-        <input type="radio" id="Thurs game role" name="Thursday game role" value="">
+        <select type="radio" id="Thurs game role" name="Thursday game role">
+            <option value="Player">Player</option>
+            <option value="DM">Dungeon Master (DM)</option>
+            <option value="N/A">N/A</option>
+        </select>
         <p></p>
         <label for="preferred number of players">If you plan to DM, how many players would you prefer to have in your campaign? If you are a player, how many other people would you prefer to play with?</label>
         <input type="number" id="preferred number of players" name="preferred number of players" value="">
         <p></p>
         <label for="is beginner">Are you a beginner to tabletop roleplaying games?</label>
-        <input type="radio" id="is beginner" name="is beginner" value="">
+        <select type="radio" id="is beginner" name="is beginner">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
         <p></p>
+        <br>
         <label for="DM campaign idea"><p>If you plan to DM, please outline your campaign idea below.<p>
-You can include anything, including the setting, the genre, the amount of time spent on roleplay vs. combat, a basic plotline
+You can include anything, including the setting, the genre, whether your campaign is more roleplay or more combat heavy, a basic plotline
 if you have one, or even just the tabletop game or ruleset you plan to use (DND 5e,
 DND 5.5e, Pathfinder, Call of Chthulu, Thirsty Space Lesbians, etc).
-If you plan to have your campaign include horror content, descriptive gore, medical trauma,
-sexual content or references to sex beyond what would be allowed in a PG13
-movie, or any other potentially triggering topics, please make sure to note
-that here. These topics are absolutely allowed in your campaign, we just
-want to make sure all players are informed and have agreed to any topics in
-the campaign they choose. If there are any specific club members you would like to DM for, please note that here as well.</pre></label>
+If you plan to have your campaign include any potentially triggering or uncomfortable topics (horror content, descriptive gore, medical trauma, 
+and sexual content are all examples) please make sure to note that here. These topics are absolutely allowed in your campaign, we just want to make 
+sure all players are informed and have agreed to any topics in the campaign they choose. If there are any specific club members you would like to 
+DM for, please note that here as well.</pre></label>
         <p></p>
         <input type="text" id="DM campaign idea" name="DM campaign idea" value="">
         <p></p>
+        <br>
         <label for="Player preferred campaign"><p>If you plan be a player, please outline the type of campaign you would like to play in here.</p>
-        You can include a preferred tabletop game or ruleset (DnD 5e, DnD 5.5e, Pathfinder, Call of Chthulu, Thirsty Space Lesbians, etc), a preferred genre</label>
+        You can include anything, including a preferred tabletop game or ruleset (DnD 5e, DnD 5.5e, Pathfinder, Call of Chthulu, Thirsty Space 
+        Lesbians, etc), a preferred genre, a preferred setting, or whether you would prefer to play a more roleplay heavy or combat heavy campaign. 
+        If there are any topics that you find triggering or uncomfortable, or that you'd just prefer not to  interact with in your campaign, (body 
+        horror, gore, medical trauma, or sexual content are all examples), please list them here. If there are any other people you would like to 
+        play with, either as a fellow player or as your DM, please note that here too. </label>
         <p></p>
         <input type="text" id="Player preferred campaign" name="Player preferred campaign" value="">
         <p></p>
-        <label for="submit"></label>
-        <input type="submit" id="submit" name="submit" value="">
+        <label for="submit">Press here to submit answers:</label>
+        <input type="submit" id="submit" name="submit" value="Submit">
     </form>
 </body>
 </html>
