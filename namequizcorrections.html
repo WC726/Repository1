@@ -11,13 +11,21 @@
     <form>
         <label for="isgay1">How often, on average, do you catch yourself thinking about another person of the same gender's physical characteristics, becoming flustered when another person of the same gender interacts with you, feeling "drawn to" or "entranced" by another person of the same gender, wishing you could be physically close to another person of the same gender, and/or thinking about kissing, going on dates with or making out with another person of the same gender?</label>
         <br>
-        <input type="text" id="isgay1" name="isgay" value="" placeholder="3-4 times a week">
+        <input type="text" id="isgay1" name="isgay" placeholder="3-4 times a week">
+        <!--I didn't need to have an empty value attribute, because I already had the placeholder. This doesn't change the function of the form at all-->
         <p></p>
+        <label for="isgay2">Gay</label>
+        <input type="radio" id="isgay2" name="has" value="yes" value="no">
         <p>Are the experiences described above centered around one specific person?</p>
         <label for="hascrush">Yes</label>
-        <input type="radio" id="hascrush" value="Yes">
+        <input type="radio" id="hascrush" name="hascrush" value="Yes">
         <label for="nocrush">No</label>
-        <input type="radio" id="nocrush" value="No">
+        <input type="radio" id="nocrush" name="hascrush" value="No">
+        <!--I put the question for the radio input in a label connected to that input. This caused the overall question to which there should have been multiple answers to appear on the webpage connected to the selector button as if it was an option. I corrected this by putting the question in paragraph tags above the inputs, and making two labels which are connected to each radio input and state what the value of that input is-->
+        <!--I only had one radio input and it had two values. This meant that only one input appeared in the webpage. I corrected it by adding one radio input, giving each of them one value, and naming them the same so that only one option could be selected-->
+        <p></p>
+        <input type="submit" value="Submit">
+        <!--I did not have a submit button. This meant that the information entered into the form could not be saved anywhere. I corrected this by adding a submit button-->
     </form>
 </body>
 </html>
